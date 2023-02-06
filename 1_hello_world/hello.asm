@@ -1,6 +1,6 @@
 ; hello.asm
 section .data 
-    msg db "hello world",10,0
+    msg db "hello world",0
 section .bss
 section .text
     global main

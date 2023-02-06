@@ -1,6 +1,7 @@
      1                                  ; hello.asm
      2                                  section .data 
-     3 00000000 7F00                        msg db 127, 0
+     3 00000000 68656C6C6F20776F72-         msg db "hello world",0
+     3 00000009 6C6400             
      4                                  section .bss
      5                                  section .text
      6                                      global main
