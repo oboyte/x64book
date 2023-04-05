@@ -18,7 +18,6 @@ section .text
     global main
 main:
     mov rbp, rsp; for correct debugging
-    mov ebp, esp; for correct debugging
     push rbp            
     mov rbp, rsp
     lea rax, [bNum]     ;load address of bNum in rax
@@ -32,7 +31,7 @@ main:
     mov rax, text1      ;load address of text1 in rax
     mov rax, text1+1    ;load second character in rax
     lea rax, [text1+1]  ;load second character in rax
-    mov rax, [text1]    ;load starting at taxt1 in rax
+    mov rax, [text1]    ;load starting at taxt1 in rax 
     mov rax, [text1+1]  ;load starting at text1+1 in rax
     mov rsp, rbp
     pop rbp
