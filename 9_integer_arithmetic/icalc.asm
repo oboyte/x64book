@@ -1,8 +1,8 @@
 ;icalc.asm
 extern printf
 section .data
-    number1     dq      128     ; the numbers to be used to
-    number2     dq      19      ; show the arithmetic
+    number1     dq      12345678901234567     ; the numbers to be used to
+    number2     dq      100      ; show the arithmetic
     neg_num     dq      -12     ; to show sign extension
     fmt         db      "These numbers are %ld and %ld",10,0
     fmtint      db      "%s %ld",10,0
