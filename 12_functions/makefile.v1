@@ -1,0 +1,7 @@
+#make -f makefile.v1 
+
+functions: functions.o
+	gcc -o functions functions.o -no-pie
+
+functions.o: functions.asm
+	nasm -f elf64 -g -F dwarf functions.asm -l functions.lst
